@@ -1,6 +1,6 @@
 import React from 'react';
-import BookCard from '../appComponents/BookCard';
-import Navigation from '../appComponents/NavBar';
+import BookCard from '../books/BookCard';
+import Navigation from '../layout/NavBar';
 
 function EditBook() {
     return ( 

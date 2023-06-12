@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card';
-import ReviewTextBox from './ReviewTextBox';
+import ReviewTextBox from '../common/ReviewTextBox';
 import { Form } from 'react-bootstrap';
 
 

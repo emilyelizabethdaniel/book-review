@@ -1,5 +1,5 @@
 import React from 'react';
-import BookCard from '../appComponents/BookCard';
+import BookCard from '../books/BookCard';
 
 function AddBook() {
     return ( 

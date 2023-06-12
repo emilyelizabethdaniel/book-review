@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card';
-import ReviewTextBox from '../../appComponents/ReviewTextBox';
+import ReviewTextBox from '../common/ReviewTextBox';
 import { Form } from 'react-bootstrap';
 
 
@@ -18,4 +18,4 @@ function BookForm(props) {
   );
 }
 
-export default BookCard;
+export default BookForm;

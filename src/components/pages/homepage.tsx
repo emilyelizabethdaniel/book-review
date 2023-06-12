@@ -3,7 +3,7 @@ import React from 'react';
 import Button from 'react-bootstrap/esm/Button';
 import { Link, redirect, useNavigate } from "react-router-dom";
 
-import Navigation from '../appComponents/NavBar';
+import Navigation from '../layout/NavBar';
 
 function homepage() {
     return ( 

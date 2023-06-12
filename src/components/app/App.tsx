@@ -1,11 +1,11 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom"
-import Homepage from './pageComponents/homepage';
-import BrowseBooks from './pageComponents/browseBooks';
-import Profile from './pageComponents/profile';
-import AddBook from './pageComponents/addBook';
-import EditBook from './pageComponents/editBook';
-import Navigation from './appComponents/NavBar';
+import Homepage from '../pages/homepage';
+import BrowseBooks from '../pages/browseBooks';
+import Profile from '../pages/profile';
+import AddBook from '../pages/addBook';
+import EditBook from '../pages/editBook';
+import Navigation from '../layout/NavBar';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
