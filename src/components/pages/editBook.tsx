@@ -1,5 +1,5 @@
 import React from 'react';
-import BookCard from '../books/BookCard';
+import BookCard from '../book/BookCard';
 import Navigation from '../layout/NavBar';
 
 function EditBook() {
