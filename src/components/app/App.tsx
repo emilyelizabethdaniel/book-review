@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={ <Homepage/> } />
           <Route path="/addBook" element={ <AddBook/> } />
           <Route path="/yourBooks" element={ <EditBook/> } />
-          <Route path="/profile" element={<Profile/>} />
+          <Route path="/profile" element={<Profile firstName='emily' lastName='daniel'email='ememdaniel98@gmail.com'/>} />
           <Route path="/browseBooks" element={<BrowseBooks/>} />
         </Routes>
     </div>

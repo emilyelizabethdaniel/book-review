@@ -1,39 +1,19 @@
-import Card from 'react-bootstrap/Card';
-import ReviewTextBox from '../common/ReviewTextBox';
-import { Form } from 'react-bootstrap';
+
+import React from 'react';
+import { BookModel } from '../../model/BookModel';
+import BookForm from './BookForm';
+import BookView from './BookView';
 
 
-// show either a form with text inputs or a card with the saved book info depending on props passed in, (newBook)
-//
+interface BookCardProps {
+  book: BookModel
+  newBook?: boolean
+}
 
-function BookCard(props) {
-  return (
-    //when I figure out data structure, make this a check if a bookProp exists, not based on title only
-    props.title ? 
-    <Card style={{ width: '18rem' }}>
-      <Card.Body>
-        <Card.Title> {props.title} </Card.Title>
-        <Card.Text>{props.author}</Card.Text>
-          <ReviewTextBox review={props.review}/>
-      </Card.Body>
-    </Card>
-    :
-    <Card style={{ width: '18rem' }}>
-        <Card.Body>
-        <Form>
-        <Form.Group className="mb-3">
-        <Form.Label>Title</Form.Label>
-        <Form.Control type="input" placeholder="enter title of book" />
-        </Form.Group>
-        <Form.Group className="mb-3">
-        <Form.Label>Author</Form.Label>
-        <Form.Control type="input" placeholder="enter name of author" />
-        </Form.Group>
-        </Form>
-        <ReviewTextBox/>
-        </Card.Body>
-    </Card>
-  );
+const BookCard: React.FC<BookCardProps> = (props) => {
+  return props.newBook 
+    ? <BookForm book={props.book} /> 
+    : <BookView book={props.book} />
 }
 
 export default BookCard;
