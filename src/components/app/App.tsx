@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 function App() {
   return (
     <div className="App">
-      <Navigation/>
+      <Navigation firstName='Emily' lastName='Daniel' email='ememdaniel98@gmail.com'/>
         <Routes>
           <Route path="/" element={ <Homepage/> } />
           <Route path="/addBook" element={ <AddBook/> } />

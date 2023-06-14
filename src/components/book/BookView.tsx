@@ -1,6 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import ReviewTextBox from '../common/ReviewTextBox';
 import { BookModel } from '../../model/BookModel';
+import { Button } from 'react-bootstrap';
 
 
 interface Props {
@@ -9,12 +10,12 @@ interface Props {
 
 const BookView: React.FC<Props> = (props) => {
   return (
-    //when I figure out data structure, make this a check if a bookProp exists, not based on title only
     <Card style={{ width: '18rem' }}>
       <Card.Body>
         <Card.Title> {props.book.title} </Card.Title>
         <Card.Text>{props.book.author}</Card.Text>
-        <ReviewTextBox review={props.book.review} />
+        <Card.Text>{props.book.review}</Card.Text>
+        <Button>Edit</Button>
       </Card.Body>
     </Card>
   );

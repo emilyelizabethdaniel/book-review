@@ -8,7 +8,7 @@ const book: BookModel = {
     title: "The Windup Bird Chronicle",
     author: 'Hakuri Murakami',
     review: 'this is the review',
-    stars: 1
+    stars: 5
 }
 
 function EditBook() {
